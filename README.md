@@ -50,8 +50,7 @@ optional arguments:
 
 Python Version > 3.6  [i recommend](https://www.python.org/downloads/release/python-386/).
 
-<br>
-  ## HOW TO USE IT? 👷 
+## 👷HOW TO USE IT? 
 
 **1.** Download [this](https://github.com/oniyevski/onibunkr) repository.
 
