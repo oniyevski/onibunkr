@@ -4,7 +4,7 @@ bunkrr.su album scraper and downloader.
 <h1 align="center">oniBunkr</h1> 
 
 <div align="center">
-<a href="https://github.com/topics/html"><img alt="PYTHON" src="https://img.shields.io/badge/HTML%20-%23E34F26.svg?&style=for-the-badge"/></a>
+<a href="https://github.com/topics/html"><img alt="PYTHON" src="https://img.shields.io/badge/PYTHON%20-%23E34F26.svg?&style=for-the-badge"/></a>
 <br>
 <br>
 <a href="https://github.com/oniyevski/onibunkr"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
