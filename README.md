@@ -14,11 +14,11 @@ bunkrr.su album scraper and downloader.
 <a href="https://github.com/oniyevski/onibunkr/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?v=103"></a>
 <br>
 <br>
-<a href="https://github.com/oniyevski/onibunkr/graphs/contributors"><img src="https://github.com/oniyevski/onibunkr?color=brightgreen"></a>
-<a href="https://github.com/oniyevski/onibunkr/stargazers"><img src="https://github.com/oniyevski/onibunkr?color=0059b3"></a>
-<a href="https://github.com/oniyevski/onibunkr/network/members"><img src="https://github.com/oniyevski/onibunkr?color=yellow"></a>
-<a href="https://github.com/oniyevski/onibunkr/issues"><img src="https://github.com/oniyevski/onibunkr?color=0059b3"></a>
-<a href="https://github.com/oniyevski/onibunkr/issues?q=is%3Aissue+is%3Aclosed"><img src="https://github.com/oniyevski/onibunkr?color=yellow"></a>
+<a href="https://github.com/oniyevski/onibunkr/graphs/contributors"><img src="https://img.shields.io/github/contributors/oniyevski/onibunkr?color=brightgreen"></a>
+<a href="https://github.com/oniyevski/onibunkr/stargazers"><img src="https://img.shields.io/github/stars/oniyevski/onibunkr?color=0059b3"></a>
+<a href="https://github.com/oniyevski/onibunkr/network/members"><img src="https://img.shields.io/github/forks/oniyevski/onibunkr?color=yellow"></a>
+<a href="https://github.com/oniyevski/onibunkr/issues"><img src="https://img.shields.io/github/issues/oniyevski/onibunkr?color=0059b3"></a>
+<a href="ühttps://github.com/oniyevski/onibunkr/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/oniyevski/onibunkr?color=yellow"></a>
 <a href="https://github.com/oniyevski/onibunkr/pulls"><img src="https://img.shields.io/github/issues-pr/oniyevski/onibunkr?color=brightgreen"></a>
 <a href="https://github.com/oniyevski/onibunkr/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/oniyevski/onibunkr?color=0059b3"></a> 
 
