@@ -1,5 +1,5 @@
 # onibunkr
-bunkrr.su album scraper and downloader.
+✨ bunkrr.su album scraper and downloader. ✌️
 
 <h1 align="center">oniBunkr</h1> 
 
