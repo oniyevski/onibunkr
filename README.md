@@ -19,7 +19,7 @@ bunkrr.su album scraper and downloader.
 <a href="https://github.com/oniyevski/onibunkr/network/members"><img src="https://github.com/oniyevski/onibunkr?color=yellow"></a>
 <a href="https://github.com/oniyevski/onibunkr/issues"><img src="https://github.com/oniyevski/onibunkr?color=0059b3"></a>
 <a href="https://github.com/oniyevski/onibunkr/issues?q=is%3Aissue+is%3Aclosed"><img src="https://github.com/oniyevski/onibunkr?color=yellow"></a>
-<a href="https://github.com/oniyevski/onibunkr/pulls"><img src="https://img.shields.io/github/issues-pr/Ayushparikh-code/Web-dev-mini-projects?color=brightgreen"></a>
-<a href="https://github.com/oniyevski/onibunkr/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/Ayushparikh-code/Web-dev-mini-projects?color=0059b3"></a> 
+<a href="https://github.com/oniyevski/onibunkr/pulls"><img src="https://img.shields.io/github/issues-pr/oniyevski/onibunkr?color=brightgreen"></a>
+<a href="https://github.com/oniyevski/onibunkr/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/oniyevski/onibunkr?color=0059b3"></a> 
 
 </div>
