@@ -34,14 +34,16 @@ logo = f"""
 print(logo)
 
 try:
-    albumCheck = s.get(config["bunkr_url"])
-    albumCheckSource = BeautifulSoup(albumCheck.content, "html.parser")
-    getAlbumCheckElement = albumCheckSource.find_all("select", attrs={"id":"filterDropdown"})
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A'
+    }
+    headers['referer'] = "https://google.com/"
+    album = s.get(config["bunkr_url"], headers=headers)
+    albumSource = BeautifulSoup(album.content, "html.parser")
+    getAlbumCheckElement = albumSource.find_all("select", attrs={"id":"filterDropdown"})
     if not getAlbumCheckElement:
         aw.warning("No such album was found on bunkr.")
         exit()
-    album = s.get(config["bunkr_url"])
-    albumSource = BeautifulSoup(album.content, "html.parser")
     getAllAlbumATag = albumSource.find_all("a", attrs={"class":"grid-images_box-link"})
     getAllAlbumATag.reverse()
     os.makedirs(os.path.join(".", "albums"), exist_ok=True)
@@ -54,7 +56,8 @@ try:
     for aTag in getAllAlbumATag:
         try:
             aTagHREF = f"https://bunkrr.su{aTag.get('href')}"
-            albumItem = s.get(aTagHREF)
+            headers['referer'] = config["bunkr_url"]
+            albumItem = s.get(aTagHREF, headers=headers)
             albumItemSource = BeautifulSoup(albumItem.content, "html.parser")
             albumItemATag = albumItemSource.find("a", attrs={"class":"bg-blue-500"})
             if albumItemATag == None:
@@ -67,7 +70,8 @@ try:
                 mediaName = albumItemATag.get("""href""").split("/")[-1][:70] + "..."
             if config["download"] in ["yes", "y"]:
                 aw.info(f'"{mediaName}" downloading...')
-                response = requests.get(albumItemATag.get("""href"""))
+                headers['referer'] = aTagHREF
+                response = requests.get(albumItemATag.get("""href"""), headers=headers)
                 if response.status_code == 200:
                     if config["download_name"] == "bunkr_file_name":
                         downloadFileName = albumItemATag.get("""href""").split("/")[-1]
@@ -79,6 +83,7 @@ try:
             aw.success(f'"{mediaName}" saved.')
             time.sleep(config["timeout"]) 
         except Exception as e:
+            print(e)
             aw.warning(f"{aTagHREF} album track could not be reached or downloaded. This might be because you are sending too many requests to the bunkr servers. You can try limiting the speed with the -timeout argument.")
             time.sleep(15)
 except Exception as e:
