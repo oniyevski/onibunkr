@@ -1,4 +1,3 @@
-from sys import version
 import requests, time, os, argparse
 from modules.advancedWrite import AdvancedWrite
 from bs4 import BeautifulSoup
@@ -17,7 +16,7 @@ parser.add_argument("album_name", help='Specify here the name under which the al
 parser.add_argument("-d", "--download", help="Should album contents be downloaded to the computer?", choices=["y", "n", "yes", "no"], default="no")
 parser.add_argument("-t", "--timeout", help="Limit the download and album browsing speed with this argument if connections time out.", default=1, type=int)
 parser.add_argument("-dn", "--download_name", help='Albums are normally downloaded to the browser with the same name as on the site, but you can change the name of the downloaded files to a fixed value. For example: "onibunkr file" the files will now be named "onibunkr file 0, onibunkr file 1".', default="bunkr_file_name", type=str)
-parser.add_argument('-v', "--version", action='version', version=f'%(prog)s {version}')
+parser.add_argument('-v', "--version", action='version', version=f'%(prog)s {VERSION}')
 args = parser.parse_args()
 config = vars(args)
 
@@ -28,7 +27,7 @@ logo = f"""
 {Fore.LIGHTGREEN_EX}  ____  ____  (_) /_  __  ______  / /______
 {Fore.LIGHTBLUE_EX} / __ \/ __ \/ / __ \/ / / / __ \/ //_/ ___/
 {Fore.LIGHTBLUE_EX}/ /_/ / / / / / /_/ / /_/ / / / / ,< / /    
-{Fore.LIGHTCYAN_EX}\____/_/ /_/_/_.___/\__,_/_/ /_/_/|_/_/     {Back.LIGHTCYAN_EX}{Fore.BLACK} {version} {Fore.RESET}{Back.RESET}
+{Fore.LIGHTCYAN_EX}\____/_/ /_/_/_.___/\__,_/_/ /_/_/|_/_/     {Back.LIGHTCYAN_EX}{Fore.BLACK} {VERSION} {Fore.RESET}{Back.RESET}
 
 {Fore.LIGHTCYAN_EX}                   developed by {Fore.LIGHTBLUE_EX}oniyevski{Fore.RESET} 
 """
