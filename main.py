@@ -1,4 +1,4 @@
-import requests, time, os, argparse
+import requests, time, os, argparse, traceback
 from modules.advancedWrite import AdvancedWrite
 from bs4 import BeautifulSoup
 from colorama import init, Fore, Back
@@ -55,7 +55,7 @@ try:
     counter = 0
     for aTag in getAllAlbumATag:
         try:
-            aTagHREF = f"https://bunkrr.su{aTag.get('href')}"
+            aTagHREF = aTag.get('href')
             headers['referer'] = config["bunkr_url"]
             albumItem = s.get(aTagHREF, headers=headers)
             albumItemSource = BeautifulSoup(albumItem.content, "html.parser")
@@ -83,7 +83,6 @@ try:
             aw.success(f'"{mediaName}" saved.')
             time.sleep(config["timeout"]) 
         except Exception as e:
-            print(e)
             aw.warning(f"{aTagHREF} album track could not be reached or downloaded. This might be because you are sending too many requests to the bunkr servers. You can try limiting the speed with the -timeout argument.")
             time.sleep(15)
 except Exception as e:
